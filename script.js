@@ -33,7 +33,7 @@ function getComputerMove() {
 function win(playerMove, computerMove) {
     playerScore++;
     playerScoreLabel.innerHTML = playerScore;
-    result.innerHTML = playerMove.toUpperCase() + "player".fontsize(3).sub() + " beats against " + computerMove.toUpperCase() + "computer".fontsize(3).sub() + ". You won! :)";
+    result.innerHTML = playerMove.toUpperCase() + "player".fontsize(3).sub() + " beats " + computerMove.toUpperCase() + "computer".fontsize(3).sub() + ". You won! :)";
     document.getElementById(playerMove).classList.add('green-glow');
     setTimeout(function () {
         document.getElementById(playerMove).classList.remove('green-glow');
@@ -43,7 +43,7 @@ function win(playerMove, computerMove) {
 function lose(playerMove, computerMove) {
     computerScore++;
     computerScoreLabel.innerHTML = computerScore;
-    result.innerHTML = playerMove.toUpperCase() + "player".fontsize(3).sub() + " lose against " + computerMove.toUpperCase() + "computer".fontsize(3).sub() + ". You lost! :(";
+    result.innerHTML = playerMove.toUpperCase() + "player".fontsize(3).sub() + " loses against " + computerMove.toUpperCase() + "computer".fontsize(3).sub() + ". You lost! :(";
     document.getElementById(playerMove).classList.add('red-glow');
     setTimeout(function () {
         document.getElementById(playerMove).classList.remove('red-glow');
